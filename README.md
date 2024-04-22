@@ -4,13 +4,14 @@ Create variable
 
 Let webcam;
 
-
 (in set up) 
 
 Pixel density → pixelDensity(1);
 
 webcam=CreateCapture(VIDEO)
+
 webcam.size(400,400)
+
 webcam.hide(); → hides webcam
 
 → anything you can do with images you can do with live video, eg, filters, tints , pixel manipulation.
@@ -21,6 +22,7 @@ In show:
 Instead of fill or stroke:
 
 Let pixelColour = webcam.get(this.x,this.y);
+
 Fill (pixelColour[0], pixelColour[1], pixelColour[2]);
 
  Also take webcam and background out of draw 
@@ -33,7 +35,9 @@ In setup
 webcam.size(width/scale, height/scale)
 
 In show
+
 Let px = this.x/scale;
+
 Let py = this.y/scale;
 
 Let pixelColour = webcam.get(px, py);
