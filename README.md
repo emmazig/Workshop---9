@@ -2,7 +2,7 @@
 
 This is the URL: https://emmazig.github.io/Workshop-task-9/
 
-Create variable 
+Create variable  
 
 Let webcam;
 
